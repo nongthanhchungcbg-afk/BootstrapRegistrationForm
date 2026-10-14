@@ -1,0 +1,145 @@
+:root {
+    --ink: #20372d;
+    --forest: #245a43;
+    --sage: #dcebdd;
+}
+
+body {
+    color: var(--ink);
+    background: #f1f4ef;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.registration-shell {
+    max-width: 1080px;
+    margin: auto;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 1.5rem 5rem rgba(32, 55, 45, .11);
+}
+
+.introduction {
+    min-height: 690px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 78% 24%, rgba(235, 198, 135, .9) 0 9%, transparent 9.3%),
+        radial-gradient(circle at 90% 30%, rgba(190, 221, 186, .36) 0 27%, transparent 27.3%),
+        linear-gradient(145deg, #1e4737, #397252);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.brand-mark {
+    display: inline-grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--forest);
+    background: #c8e5ca;
+}
+
+.eyebrow {
+    color: #548267;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.introduction .eyebrow {
+    color: #c6e1c4;
+}
+
+.intro-copy {
+    max-width: 26rem;
+    margin: 4rem 0;
+}
+
+.intro-copy h1 {
+    line-height: 1.08;
+}
+
+.intro-copy .lead,
+.intro-foot {
+    color: #e0ebe2;
+    font-size: 1rem;
+}
+
+.form-area {
+    max-width: 100%;
+}
+
+.form-label,
+legend.form-label {
+    color: #2d4338;
+    font-size: .92rem;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 46px;
+    border-color: #dbe3dc;
+    border-radius: .65rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #75a887;
+    box-shadow: 0 0 0 .2rem rgba(76, 139, 97, .15);
+}
+
+.form-check-input:checked {
+    border-color: var(--forest);
+    background-color: var(--forest);
+}
+
+.submit-button {
+    border: 0;
+    border-radius: .7rem;
+    background: var(--forest);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background: #183b2c;
+}
+
+@media (max-width: 991.98px) {
+    .introduction {
+        min-height: 300px;
+    }
+
+    .intro-copy {
+        margin: 2.5rem 0 1.5rem;
+    }
+
+    .intro-copy h1 {
+        max-width: 35rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .registration-shell {
+        border-radius: 1rem;
+    }
+
+    .introduction {
+        min-height: 280px;
+    }
+
+    .intro-copy {
+        margin: 2rem 0 1rem;
+    }
+
+    .intro-copy h1 {
+        font-size: 2.35rem;
+    }
+}
